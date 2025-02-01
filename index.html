@@ -98,15 +98,15 @@
             event.preventDefault();
             const name_input=document.getElementById('fullname');
             const date_input=document.getElementById('birthday');
-            if(name_input && date_input)
+            if(name_input.value!="" && date_input.value!="")
             {
                 const name=name_input.value;
                 const birthday=date_input.value;
                 const url=`index2.html?name=${name}&birthday=${birthday}`;
-
                 window.location.href=url;
-            }      
-
+            }
+            else
+                form.reset()
         })
     </script>
 </body>
