@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+            text-shadow: 1px 1px 7px black;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-image: url(./Background.jpg);
+            display: flex;
+            background-color: black;
+            padding: 100px;
+            height: 100vh;
+            width: 100wv;
+        }
+        .heading{
+            font-size: 2rem;
+            display: inline-block;
+            align-self: center;
+        }
+        span{
+            font-size: 1rem;
+            display: block;
+        }
+        #countdown{
+            position: absolute;
+            right: 150px;
+            margin: 40px;
+            display: inline-block;
+        }
+        .first{
+            text-align: center;
+        }
+        .second{
+            display: flex;
+        }
+        .box{
+            display: inline-block;
+            padding: 30px;
+            font-size: 5rem;
+            text-align: center;
+        }
+        h6{
+            font-size: smaller;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <span>Time Untill</span>
+        <h1 id="username"></h1>
+    </div>
+    <div id="countdown">
+        <div class="first">
+            <div class="box">
+                <div id="days"></div>
+                <span>Days</span>            
+            </div>
+        </div>
+        <div class="second">
+            <div class="box">
+                <div id="hours"></div>
+                <span>Hours</span>
+            </div>
+            <div class="box">
+                <div id="mins"></div>
+                <span>Minutes</span>
+            </div>
+            <div class="box">
+                <div id="secs"></div>
+                <span>Seconds</span>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
